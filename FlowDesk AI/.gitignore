@@ -33,9 +33,3 @@ next-env.d.ts
 # IDE
 .idea/
 .vscode/
-
-# Extras (não pertencem ao projeto)
-.prettierrc
-styles/
-supabase/
-types/
