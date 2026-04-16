@@ -1,0 +1,117 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --divas-pink: #F8B4C4;
+  --divas-pink-dark: #E89AAE;
+  --divas-nude: #F5E6D3;
+  --divas-nude-dark: #E8D4BE;
+  --divas-gold: #D4AF37;
+  --divas-gold-light: #F0D77C;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(135deg, #FDFBF7 0%, #F5E6D3 100%);
+  min-height: 100vh;
+}
+
+.divas-gradient {
+  background: linear-gradient(135deg, var(--divas-pink) 0%, var(--divas-pink-dark) 100%);
+}
+
+.divas-card {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(248, 180, 196, 0.2);
+}
+
+.divas-btn {
+  background: linear-gradient(135deg, var(--divas-pink) 0%, var(--divas-pink-dark) 100%);
+  color: white;
+  font-weight: 600;
+  padding: 12px 24px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.divas-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(248, 180, 196, 0.4);
+}
+
+.divas-btn-secondary {
+  background: white;
+  color: var(--divas-pink-dark);
+  border: 2px solid var(--divas-pink);
+}
+
+.divas-input {
+  width: 100%;
+  padding: 14px 16px;
+  border: 2px solid #E8D4BE;
+  border-radius: 12px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  background: white;
+}
+
+.divas-input:focus {
+  outline: none;
+  border-color: var(--divas-pink);
+  box-shadow: 0 0 0 4px rgba(248, 180, 196, 0.2);
+}
+
+.divas-sidebar {
+  background: white;
+  width: 280px;
+  min-height: 100vh;
+  border-right: 1px solid #F0E6DB;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+.divas-topbar {
+  background: white;
+  height: 72px;
+  border-bottom: 1px solid #F0E6DB;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 280px;
+  z-index: 100;
+}
+
+.divas-content {
+  margin-left: 280px;
+  margin-top: 72px;
+  padding: 32px;
+  min-height: calc(100vh - 72px);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.4s ease-out;
+}
+
+.status-active { background: #D1FAE5; color: #065F46; }
+.status-pending { background: #FEF3C7; color: #92400E; }
+.status-inactive { background: #FEE2E2; color: #991B1B; }
+.status-rejected { background: #F3F4F6; color: #6B7280; }
