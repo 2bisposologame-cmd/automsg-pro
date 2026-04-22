@@ -1,0 +1,31 @@
+{
+  "name": "automsg-pro",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "test": "jest",
+    "test:coverage": "jest --coverage"
+  },
+  "dependencies": {
+    "@sentry/nextjs": "^10.49.0",
+    "@supabase/supabase-js": "^2.99.2",
+    "next": "^14.2.0",
+    "puppeteer": "^24.39.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.29.0",
+    "@babel/preset-env": "^7.29.2",
+    "@babel/preset-react": "^7.28.5",
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.2",
+    "babel-jest": "^30.3.0",
+    "jest": "^30.3.0",
+    "jest-environment-jsdom": "^30.3.0"
+  }
+}
